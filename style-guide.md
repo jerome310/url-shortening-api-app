@@ -11,7 +11,7 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Cyan: hsl(180, 66%, 49%)
+- Cyan: #2acfcf (light blue)
 - Dark Violet: hsl(257, 27%, 26%)
 
 ### Secondary
@@ -20,7 +20,7 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- Gray: hsl(0, 0%, 75%)
+- Gray: #bfbfbf
 - Grayish Violet: hsl(257, 7%, 63%)
 - Very Dark Blue: hsl(255, 11%, 22%)
 - Very Dark Violet: hsl(260, 8%, 14%)
