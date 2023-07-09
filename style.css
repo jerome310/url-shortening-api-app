@@ -15,10 +15,11 @@ body {
 }
 
 .mobile-nav-container {
-    width: 100%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 10px auto 0;
 }
 
 .mobile-nav-container img {
@@ -31,6 +32,49 @@ body {
      cursor: pointer;
      display: block;
  }
+
+ .nav-links-container {
+    display: none;
+    background-color: #3b3054;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 900;
+    border-radius: 20px;
+    height: 45vh;
+ }
+
+ .nav-links-container.dropdown {
+    display: block;
+ }
+
+
+
+ .left-nav p {
+    padding: 15px 0 15px;
+ }
+
+ hr {
+    color: #ffffff;
+    opacity: .3;
+    width: 70%;
+    margin: 0 auto;
+ }
+
+ .right-nav p {
+    padding: 15px 0;
+ }
+
+ .sign-up-button {
+    background-color: #2acfcf;
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+ }
+
+
 
  /* Tablet Screen */
 @media only screen and (min-width: 640px) {

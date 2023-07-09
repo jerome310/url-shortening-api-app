@@ -1,8 +1,15 @@
 const btn = document.querySelector(".hamburger-button");
-const nav = document.querySelector('.nav');
-console.log(nav)
+const navContainer = document.querySelector(".nav-links-container");
+console.log(navContainer)
 
 
 btn.addEventListener('click', () => {
-    nav.classList.toggle('dropdown')
+    navContainer.classList.toggle("dropdown");
 })
+
+// const navDisappear = () => {
+//     let hide = document.querySelector(".nav-links-container").hidden;
+//     console.log(hide, 'hidden')
+// }
+
+// navDisappear()
