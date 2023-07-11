@@ -50,8 +50,6 @@ body {
     display: block;
  }
 
-
-
  .left-nav p {
     padding: 15px 0 15px;
  }
@@ -78,7 +76,31 @@ body {
 
  /* Tablet Screen */
 @media only screen and (min-width: 640px) {
+    .container {
+        display: flex;
+    }
     .hamburger-button {
         display: none;
+    }
+    .nav-links-container {
+        display: flex;
+        background-color: #ffffff;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 0px;
+        text-align: center;
+        color: #8c8c8c;
+        font-weight: 900;
+        border-radius: 20px;
+        height: 0vh;
+    }
+    hr {
+        display: none;
+    }
+    .left-nav {
+        display: flex;
+    }
+    .right-nav {
+            display: flex;
     }
 }
