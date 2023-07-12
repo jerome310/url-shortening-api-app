@@ -11,9 +11,6 @@ body {
     font-size: 18px;
 }
 
-.container {
-}
-
 .mobile-nav-container {
     width: 95%;
     display: flex;
@@ -61,15 +58,20 @@ body {
     margin: 0 auto;
  }
 
- .right-nav p {
+ .login-text {
     padding: 15px 0;
  }
+
+ /* .right-nav p {
+    padding: 15px 0;
+ } */
 
  .sign-up-button {
     background-color: #2acfcf;
     border-radius: 50px;
     width: 60%;
-    margin: 0 auto;
+    margin: 0px auto;
+    padding: 15px 0;
  }
 
 
@@ -80,8 +82,79 @@ body {
         display: flex;
         align-items: center;
         /* background-color: red; */
+        width: 90%;
+        margin: 25px auto 0;
+    }
+
+    .hamburger-button {
+        display: none;
+    }
+
+    .mobile-nav-container {
+        /* background-color: purple; */
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    
+    .nav-links-container {
+        display: flex;
+        align-items: center;
         width: 100%;
         margin: 0 auto;
+        padding-top: 0px;
+        text-align: center;
+        color: #8c8c8c;
+        font-weight: 900;
+        border-radius: 20px;
+        height: 0vh;
+        background-color: white;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .left-nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left-nav p {
+        padding: 0;
+        width: 30%;
+    }
+
+    .right-nav {
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    .login-text {
+        padding: 0;
+    }
+
+    .sign-up-button {
+        background-color: #2acfcf;
+        border-radius: 50px;
+        width: 60%;
+        padding: 10px 10px;
+        color: #ffffff;
+    }
+}
+
+ /* Desktop Screen */
+@media only screen and (min-width: 900px) {
+    .container {
+        display: flex;
+        align-items: center;
+        /* background-color: red; */
+        width: 90%;
+        margin: 25px auto 0;
     }
 
     .hamburger-button {
@@ -94,12 +167,12 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 10px auto 0;
+        margin: 0 auto 0;
     }
     
     .nav-links-container {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
         margin: 0 auto;
         padding-top: 0px;
@@ -107,7 +180,7 @@ body {
         color: #8c8c8c;
         font-weight: 900;
         border-radius: 20px;
-        height: 3vh;
+        height: 0vh;
         background-color: white;
     }
 
