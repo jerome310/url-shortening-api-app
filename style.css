@@ -11,6 +11,7 @@ body {
     font-size: 18px;
 }
 
+/* Navbar Section */
 .mobile-nav-container {
     width: 95%;
     display: flex;
@@ -62,10 +63,6 @@ body {
     padding: 15px 0;
  }
 
- /* .right-nav p {
-    padding: 15px 0;
- } */
-
  .sign-up-button {
     background-color: #2acfcf;
     border-radius: 50px;
@@ -74,24 +71,48 @@ body {
     padding: 15px 0;
  }
 
+/* Hero Section */
+.hero-container {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
 
+.hero-container img {
+     width: 100%;
+     /* position: absolute; */
+     /* top: 0; */
+     /* left: 10%; */
+}
+
+.hero-container h1 {
+     color: #333333;
+     padding: 15px 20px;
+     font-size: 45px;
+     font-weight: 800;
+}
+
+.hero-container .hero-par {
+     color: #333333;
+     padding: 0px 90px 20px;
+     color: rgb(177, 177, 177);
+     font-weight: 600;
+}
 
  /* Tablet Screen */
 @media only screen and (min-width: 640px) {
     .container {
         display: flex;
         align-items: center;
-        /* background-color: red; */
         width: 90%;
         margin: 25px auto 0;
     }
 
+    /* Navbar Section */
     .hamburger-button {
         display: none;
     }
 
     .mobile-nav-container {
-        /* background-color: purple; */
         width: 25%;
         display: flex;
         align-items: center;
@@ -145,6 +166,8 @@ body {
         padding: 10px 10px;
         color: #ffffff;
     }
+
+    /* Hero Section */
 }
 
  /* Desktop Screen */
@@ -152,17 +175,16 @@ body {
     .container {
         display: flex;
         align-items: center;
-        /* background-color: red; */
         width: 90%;
         margin: 25px auto 0;
     }
 
+    /* Navbar Section */
     .hamburger-button {
         display: none;
     }
 
     .mobile-nav-container {
-        /* background-color: purple; */
         width: 15%;
         display: flex;
         align-items: center;
@@ -205,16 +227,13 @@ body {
         width: 20%;
     }
 
-    .right-nav p {
-        padding: 0;
-    }
-
     .sign-up-button {
         background-color: #2acfcf;
         border-radius: 50px;
-        width: 50%;
-        /* This is the padding for the sign up blue navbar button */
-        padding: 0 0;
-        margin: 0 auto;
+        width: 60%;
+        padding: 10px 10px;
+        color: #ffffff;
     }
+
+    /* Hero Section */
 }
