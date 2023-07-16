@@ -89,11 +89,11 @@ body {
 }
 
 .hero-container .hero-par {
-     color: #333333;
      padding: 0px 30px 20px;
      color: rgb(177, 177, 177);
      font-weight: 600;
      margin-bottom: 20px;
+     line-height: 160%;
 }
 
 .get-started {
@@ -106,7 +106,7 @@ body {
     text-decoration: none;
 }
 
-/* Input Container */
+/* Input Container Section */
 .input-container {
     background-color: #3A3053;
     border-radius: 10px;
@@ -154,6 +154,31 @@ body {
     color: #ffffff;
     font-weight: 900;
     font-family: 'Karla', sans-serif;
+}
+
+/* Advanced Statistics Section */
+.advanced-stat-container {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+
+.advanced-stat-container h1 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.advanced-stat-container p {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 0px 30px 20px;
+    color: rgb(177, 177, 177);
+    font-weight: 600;
+    line-height: 160%;
+    padding: 0 75px;
 }
 
  /* Tablet Screen */
@@ -360,38 +385,65 @@ body {
     }
 
     .get-started {
-       margin-left: 15px;
+        margin-left: 15px;
     }
 
     /* Input Container */
     .input-container {
-      background-image: url('images/bg-shorten-desktop.jpg');
-      background-color: #3A3053;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 90%;
-      height: 25vh;
-      padding: 30px 0px;
-      margin: 100px auto 100px;
-      text-align: center;
+        background-image: url('images/bg-shorten-desktop.jpg');
+        background-color: #3A3053;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 25vh;
+        padding: 30px 0px;
+        margin: 100px auto 100px;
+        text-align: center;
     }
 
     .input-bars {
+        width: 90%;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .input {
-      background-color: #544879;
-      border-radius: 5px;
-      font-size: 17px;
-      height: 42px;
-      width: 500px;
-      margin-bottom: 20px;
-      border: none;
-      outline-width: 0;
-      font-weight: 500;
+        background-color: #544879;
+        border-radius: 5px;
+        font-size: 17px;
+        height: 50px;
+        width: 90%;
+        margin-bottom: 20px;
+        border: none;
+        outline-width: 0;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+
+    .input-button {
+        background-color: #2ACFCF;
+        border: none;
+        outline-width: 0;
+        border-radius: 5px;
+        font-size: 17px;
+        height: 50px;
+        width: 15%;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: 'Karla', sans-serif;
+    }
+
+    /* Advanced Statistics */
+    .advanced-stat-container p {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        padding: 0px 30px 20px;
+        color: rgb(177, 177, 177);
+        font-weight: 600;
+        line-height: 160%;
+        padding: 0 33%;
     }
 }
