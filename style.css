@@ -185,10 +185,36 @@ body {
 .box-section-container {
     text-align: center;
     background-color: #F0F1F6;
+    width: 80%;
+    margin: 100px auto 0;
+}
+
+.img-container {
+    background-color: #4B406B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    border-radius: 50%;
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 40px;
 }
 
 .box-section-container img {
-    width: 20px;
+    width: 40px;
+}
+
+.box-one h1 {
+    font-size: 25px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 900;
+
+}
+.box-one p {
+    font-family: 'Karla', sans-serif;
+    color: rgb(151, 151, 151);
 }
 
  /* Tablet Screen */
