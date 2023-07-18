@@ -189,6 +189,18 @@ body {
     margin: 100px auto 0;
 }
 
+/* Start Second and Third Box Section */
+.box-other-section-container {
+    text-align: center;
+        background-color: #F0F1F6;
+        width: 80%;
+        margin: 40px auto 0;
+}
+
+.box-other-section-container img {
+    width: 40px;
+}
+
 .img-container {
     background-color: #4B406B;
     display: flex;
@@ -215,6 +227,14 @@ body {
 .box-one p {
     font-family: 'Karla', sans-serif;
     color: rgb(151, 151, 151);
+    padding: 20px 20px;
+}
+
+.green-line {
+    background-color: #2BD0D1;
+    width: 8px;
+    height: 50px;
+    margin: 0 auto;
 }
 
  /* Tablet Screen */
@@ -320,6 +340,26 @@ body {
         padding: 30px 0px;
         margin: 100px auto 100px;
         text-align: center;
+    }
+
+    /* Box Section */
+    .img-container {
+        background-color: #4B406B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+        border-radius: 50%;
+        width: 15%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .box-one p {
+        font-family: 'Karla', sans-serif;
+        color: rgb(151, 151, 151);
+        padding: 20px 50px;
     }
 }
 
