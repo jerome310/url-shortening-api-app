@@ -11,102 +11,10 @@ body {
     font-size: 18px;
 }
 
-/* Navbar Section */
-.mobile-nav-container {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px auto 0;
-}
+/* 300px Mobile Sized Devices */
+@media only screen and (min-height: 300px) {
 
-.mobile-nav-container img {
-    height: 33px;
-}
-
- .hamburger-button {
-     width: 50px;
-     color: #9e9aa7;
-     cursor: pointer;
-     display: block;
- }
-
- .nav-links-container {
-    display: none;
-    background-color: #3b3054;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-weight: 900;
-    border-radius: 20px;
-    height: 45vh;
- }
-
- .nav-links-container.dropdown {
-    display: block;
- }
-
- .left-nav p {
-    padding: 15px 0 15px;
- }
-
- hr {
-    color: #ffffff;
-    opacity: .3;
-    width: 70%;
-    margin: 0 auto;
- }
-
- .login-text {
-    padding: 15px 0;
- }
-
- .sign-up-button {
-    background-color: #2acfcf;
-    border-radius: 50px;
-    width: 60%;
-    margin: 0px auto;
-    padding: 15px 0;
- }
-
-/* Hero Section */
-.hero-container {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.hero-container img {
-     width: 100%;
-}
-
-.hero-container h1 {
-     color: #333333;
-     padding: 15px 20px;
-     font-size: 45px;
-     font-weight: 800;
-}
-
-.hero-container .hero-par {
-     padding: 0px 30px 20px;
-     color: rgb(177, 177, 177);
-     font-weight: 600;
-     margin-bottom: 20px;
-     line-height: 160%;
-}
-
-.get-started {
-    background-color: #2acfcf;
-    border-radius: 50px;
-    width: 40%;
-    padding: 15px 60px;
-    color: #ffffff;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-/* Input Container Section */
+    /* Input Container Section */
 .input-container {
     background-color: #3A3053;
     border-radius: 10px;
@@ -156,86 +64,239 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
-/* Advanced Statistics Section */
-.advanced-stat-container {
-    text-align: center;
-    font-family: 'Karla', sans-serif;
 }
+/* 500px Desktop Mobile Window Browser Screen Size */
+@media only screen and (min-height: 500px) {
 
-.advanced-stat-container h1 {
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    color: #333333;
-    font-size: 30px;
-    padding-bottom: 20px;
-}
+/* Navbar Section */
+    .mobile-nav-container {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto 0;
+    }
 
-.advanced-stat-container p {
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    padding: 0px 30px 20px;
-    color: rgb(177, 177, 177);
-    font-weight: 600;
-    line-height: 160%;
-    padding: 0 75px;
-}
+    .mobile-nav-container img {
+        height: 33px;
+    }
 
-/* Box Section */
-.box-section-container {
-    text-align: center;
-    background-color: #F0F1F6;
-    width: 80%;
-    margin: 100px auto 0;
-}
+    .hamburger-button {
+        width: 50px;
+        color: #9e9aa7;
+        cursor: pointer;
+        display: block;
+    }
 
-/* Start Second and Third Box Section */
-.box-other-section-container {
-    text-align: center;
+    .nav-links-container {
+        display: none;
+        background-color: #3b3054;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+        text-align: center;
+        color: #ffffff;
+        font-weight: 900;
+        border-radius: 20px;
+        height: 45vh;
+    }
+
+    .nav-links-container.dropdown {
+        display: block;
+    }
+
+    .left-nav p {
+        padding: 15px 0 15px;
+    }
+
+    hr {
+        color: #ffffff;
+        opacity: .3;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .login-text {
+        padding: 15px 0;
+    }
+
+    .sign-up-button {
+        background-color: #2acfcf;
+        border-radius: 50px;
+        width: 60%;
+        margin: 0px auto;
+        padding: 15px 0;
+    }
+
+    /* Hero Section */
+    .hero-container {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .hero-container img {
+        width: 100%;
+    }
+
+    .hero-container h1 {
+        color: #333333;
+        padding: 15px 20px;
+        font-size: 45px;
+        font-weight: 800;
+    }
+
+    .hero-container .hero-par {
+        padding: 0px 30px 20px;
+        color: rgb(177, 177, 177);
+        font-weight: 600;
+        margin-bottom: 20px;
+        line-height: 160%;
+    }
+
+    .get-started {
+        background-color: #2acfcf;
+        border-radius: 50px;
+        width: 40%;
+        padding: 15px 60px;
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    /* Input Container Section */
+    .input-container {
+        background-color: #3A3053;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 25vh;
+        padding: 30px 0px;
+        margin: 100px auto 100px;
+        text-align: center;
+    }
+
+    .input-bars {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input {
+        border-radius: 5px;
+        font-size: 17px;
+        height: 42px;
+        width: 100%;
+        border: none;
+        outline-width: 0;
+        font-weight: 500;
+        margin: 20px auto;
+    }
+
+    ::placeholder {
+        color: #B4B4B6;
+        padding-left: 20px;
+        font-family: 'Karla', sans-serif;
+    }
+
+    .input-button {
+        background-color: #2ACFCF;
+        border: none;
+        outline-width: 0;
+        border-radius: 5px;
+        font-size: 17px;
+        height: 42px;
+        width: 100%;
+        color: #ffffff;
+        font-weight: 900;
+        font-family: 'Karla', sans-serif;
+    }
+
+    /* Advanced Statistics Section */
+    .advanced-stat-container {
+        text-align: center;
+        font-family: 'Karla', sans-serif;
+    }
+
+    .advanced-stat-container h1 {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        color: #333333;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .advanced-stat-container p {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        padding: 0px 30px 20px;
+        color: rgb(177, 177, 177);
+        font-weight: 600;
+        line-height: 160%;
+        padding: 0 75px;
+    }
+
+    /* Box Section */
+    .box-section-container {
+        text-align: center;
+        background-color: #F0F1F6;
+        width: 80%;
+        margin: 100px auto 0;
+    }
+
+    /* Start Second and Third Box Section */
+    .box-other-section-container {
+        text-align: center;
         background-color: #F0F1F6;
         width: 80%;
         margin: 40px auto 0;
+    }
+
+    .box-other-section-container img {
+        width: 40px;
+    }
+
+    .img-container {
+        background-color: #4B406B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+        border-radius: 50%;
+        width: 20%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .box-section-container img {
+        width: 40px;
+    }
+
+    .box-one h1 {
+        font-size: 25px;
+        font-family: 'Karla', sans-serif;
+        font-weight: 900;
+
+    }
+
+    .box-one p {
+        font-family: 'Karla', sans-serif;
+        color: rgb(151, 151, 151);
+        padding: 20px 20px;
+    }
+
+    .green-line {
+        background-color: #2BD0D1;
+        width: 8px;
+        height: 50px;
+        margin: 0 auto;
+    }
 }
 
-.box-other-section-container img {
-    width: 40px;
-}
 
-.img-container {
-    background-color: #4B406B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-    border-radius: 50%;
-    width: 20%;
-    margin: 0 auto;
-    position: relative;
-    bottom: 40px;
-}
-
-.box-section-container img {
-    width: 40px;
-}
-
-.box-one h1 {
-    font-size: 25px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 900;
-
-}
-.box-one p {
-    font-family: 'Karla', sans-serif;
-    color: rgb(151, 151, 151);
-    padding: 20px 20px;
-}
-
-.green-line {
-    background-color: #2BD0D1;
-    width: 8px;
-    height: 50px;
-    margin: 0 auto;
-}
 
  /* Tablet Screen */
 @media only screen and (min-width: 640px) {
