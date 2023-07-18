@@ -131,10 +131,10 @@ body {
     font-size: 17px;
     height: 42px;
     width: 100%;
-    margin-bottom: 20px;
     border: none;
     outline-width: 0;
     font-weight: 500;
+    margin: 20px auto;
 }
 
 ::placeholder {
@@ -150,7 +150,7 @@ body {
     border-radius: 5px;
     font-size: 17px;
     height: 42px;
-    width: 300px;
+    width: 100%;
     color: #ffffff;
     font-weight: 900;
     font-family: 'Karla', sans-serif;
@@ -474,7 +474,7 @@ body {
         justify-content: center;
         width: 90%;
         height: 25vh;
-        padding: 30px 0px;
+        padding: 0px 0px;
         margin: 100px auto 100px;
         text-align: center;
     }
