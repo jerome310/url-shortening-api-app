@@ -127,6 +127,7 @@ body {
     .input-bars {
         display: flex;
         flex-direction: column;
+        width: 90%;
     }
 
     .input {
