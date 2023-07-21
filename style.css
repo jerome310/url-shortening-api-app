@@ -828,7 +828,19 @@ hr {
 }
 
 /* Desktop Screen */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) { 
+    /* Input Section */
+    .input-container {
+        background-image: url(images/bg-shorten-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: contain;
+        width: 90%;
+        height: 25vh;
+    }
+
+    /* Advance Box Section */
     .box-section-container {
         width: 30%;
         padding: 50px 0;
