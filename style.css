@@ -853,6 +853,20 @@ hr {
     }
     /* End Second and Third Box Section */
 
+    .img-container {
+        background-color: #4B406B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+        border-radius: 50%;
+        width: 16%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 90px;
+        object-fit: contain;
+    }
+
     .green-line {
         background-color: #2BD0D1;
         width: 100px;
