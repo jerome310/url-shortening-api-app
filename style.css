@@ -223,6 +223,7 @@ hr {
     margin: 0 auto;
     position: relative;
     bottom: 40px;
+    object-fit: contain;
 }
 
 .box-section-container img {
@@ -683,17 +684,12 @@ hr {
 
     /* Input Container */
     .input-container {
-        background-image: url('images/bg-shorten-desktop.jpg');
-        background-color: #3A3053;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-image: url(images/bg-shorten-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         width: 90%;
         height: 25vh;
-        padding: 0px 0px;
-        margin: 100px auto 100px;
-        text-align: center;
     }
 
     .input-bars {
@@ -783,44 +779,72 @@ hr {
         margin: 0 auto;
     }
 
-        /* Footer Section */
-        .footer-container {
-            background-color: #232027;
-            font-size: 16px;
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 0;
-        }
-    
-        .footer-img-container {
-            text-align: center;
-            padding: 15px 0;
-        }
+    /* Boost Section */
+    .boost-container {
+        position: relative;
+        top: 5px;
+    }
 
-        .footer-text-parent {
-            display: flex;
-            justify-content: space-between;
-            width: 45%;
-        }
-    
-        .social-icons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 0;
-            height: 10vh;
-            width: 10%;
-        }
-    
-        .facebook {
-            width: 50%;
-        }
-    
-        .twitter {
-            width: 50%;
-        }
-    
-        .pinterest {
-            width: 50%;
-        }
+    /* Footer Section */
+    .footer-container {
+        background-color: #232027;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+
+    .footer-img-container {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .footer-text-parent {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0;
+        height: 10vh;
+        width: 10%;
+    }
+
+    .facebook {
+        width: 50%;
+    }
+
+    .twitter {
+        width: 50%;
+    }
+
+    .pinterest {
+        width: 50%;
+    }
+}
+
+/* Desktop Screen */
+@media only screen and (min-width: 1600px) {
+    .box-section-container {
+        width: 30%;
+        padding: 50px 0;
+    }
+
+     /* Start Second and Third Box Section */
+     .box-other-section-container {
+        width: 30%;
+        padding: 50px 0;
+    }
+    /* End Second and Third Box Section */
+
+    .green-line {
+        background-color: #2BD0D1;
+        width: 100px;
+        height: 10px;
+        margin: 0 auto;
+    }
 }
