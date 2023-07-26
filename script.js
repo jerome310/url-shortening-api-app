@@ -30,6 +30,7 @@ let shortenUrl = () => {
     .then((item) => {
       let apiObject = item;
       urlText.textContent = displayValue;
+      //urlText.style.padding = '500px'
       apiObject = item.result.short_link;
       apiLink.textContent = apiObject
       copyButton.textContent = 'Copy'
@@ -46,16 +47,21 @@ let shortenUrl = () => {
 inputButton.addEventListener("click", () => {
   let urlInput = input.value;
   console.log(urlInput)
-  if (urlInput) {
+  if (
+    urlInput.match(
+      /^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]*)?/
+    )
+  ) {
     input.style.border = "";
     invalidMessage.style.color = "";
     invalidMessage.textContent = "";
     shortenUrl();
-    urlShort.classList.add('javascript-container')
+    urlShort.classList.add("javascript-container");
     urlText.classList.add("javascript-first-text");
     apiLink.classList.add("javascript-second-text");
-    copyButton.classList.add('javascript-copy-button')
+    copyButton.classList.add("javascript-copy-button");
   } else {
+    inputButton.style.marginBottom = '25px'
     input.style.border = "3px solid #EA7F80";
     invalidMessage.style.color = "#EA7F80";
     invalidMessage.textContent = "Please add a link";

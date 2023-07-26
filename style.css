@@ -184,7 +184,7 @@ hr {
 .url-text.javascript-first-text {
     border-bottom: 1px solid #3B3054;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px 0px;
     font-family: 'Karla', sans-serif;
     font-weight: 700;
     width: 95%;
@@ -747,6 +747,7 @@ hr {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     .input {
@@ -755,12 +756,20 @@ hr {
         font-size: 17px;
         height: 50px;
         width: 90%;
-        margin-bottom: 20px;
         border: none;
         outline-width: 0;
         font-weight: 500;
         margin-right: 20px;
         color: #ffffff;
+    }
+
+    .input-block {
+        margin-bottom: 0px;
+        width: 90%
+    }
+
+    .invalid-message {
+        padding-top: 5px;
     }
 
     .input-button {
@@ -774,6 +783,7 @@ hr {
         color: #ffffff;
         font-weight: 900;
         font-family: 'Karla', sans-serif;
+        margin-bottom: 5px;
     }
 
     /* Advanced Statistics */
