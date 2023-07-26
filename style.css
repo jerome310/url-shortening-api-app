@@ -171,6 +171,44 @@ hr {
     cursor: pointer;
 }
 
+/* HTML Shortened Code */
+.url-short.javascript-container {
+    background-color: #F0F1F6;
+    width: 75%;
+    text-align: center;
+    margin: 50px auto 100px;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.url-text.javascript-first-text {
+    border-bottom: 1px solid #3B3054;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    width: 95%;
+}
+
+.api-link.javascript-second-text {
+    padding: 10px 0;
+    color: #2ACFCF;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+}
+
+.copy-button.javascript-copy-button {
+    padding: 10px 140px;
+    background-color: #2ACFCF;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* Advanced Statistics Section */
 .advanced-stat-container {
     text-align: center;

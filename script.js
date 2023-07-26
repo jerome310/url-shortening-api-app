@@ -4,7 +4,12 @@ const form = document.querySelector(".input-container");
 let input = document.querySelector(".input");
 let invalidMessage = document.querySelector(".invalid-message");
 let inputButton = document.querySelector(".input-button");
-let displayValue = [];
+let displayValue = '';
+// Styling Added Class
+let urlText = document.querySelector('.url-text');
+let apiLink = document.querySelector(".api-link");
+let urlShort = document.querySelector(".url-short");
+let copyButton = document.querySelector(".copy-button");
 
 // Toggle Navbar
 btn.addEventListener("click", () => {
@@ -16,22 +21,46 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
-// Button Functionality
+// API Function
+let shortenUrl = () => {
+  let urlInput = input.value;
+  let displayValue = urlInput;
+  fetch(`https://api.shrtco.de/v2/shorten?url=${displayValue}`)
+    .then((data) => data.json())
+    .then((item) => {
+      let apiObject = item;
+      urlText.textContent = displayValue;
+      apiObject = item.result.short_link;
+      apiLink.textContent = apiObject
+      copyButton.textContent = 'Copy'
+      copyButton.addEventListener("click", () => {
+        copyButton.textContent = "Copied!";
+        let buttonLink = item.result.short_link;
+        console.log(buttonLink)
+        window.navigator.clipboard.writeText(buttonLink)
+      });
+    });
+  };
+
+// Submit It Button Functionality
 inputButton.addEventListener("click", () => {
-    // 1) Find a regex for url link addresses
-    let urlInput = input.value;
-    displayValue.push(urlInput);
-    console.log(displayValue)
-    if(!urlInput.match(/^((ftp|http|https):\/\/)?(www.)?(?!.*(ftp|http|https|www.))[a-zA-Z0-9_-]+(\.[a-zA-Z]+)+((\/)[\w#]+)*(\/\w+\?[a-zA-Z0-9_]+=\w+(&[a-zA-Z0-9_]+=\w+)*)?$/gm)){
-      input.style.border = "3px solid #EA7F80";
-      invalidMessage.style.color = "#EA7F80";
-      invalidMessage.textContent = "Please add a link";
-    } else {
-      console.log("NOPE!");
-    }
-    input.value = ''
-    // 2) Give the input an invalid feature if it's not correct
-    // 3) Display the url from the input on the browser
-    // 4) Style the Div for the url
-    // 5) Find out how to build out a copy feature 
+  let urlInput = input.value;
+  console.log(urlInput)
+  if (urlInput) {
+    input.style.border = "";
+    invalidMessage.style.color = "";
+    invalidMessage.textContent = "";
+    shortenUrl();
+    urlShort.classList.add('javascript-container')
+    urlText.classList.add("javascript-first-text");
+    apiLink.classList.add("javascript-second-text");
+    copyButton.classList.add('javascript-copy-button')
+  } else {
+    input.style.border = "3px solid #EA7F80";
+    invalidMessage.style.color = "#EA7F80";
+    invalidMessage.textContent = "Please add a link";
+    console.log("NOPE!");
+    urlText.textContent = "";
+  }
+  input.value = "";
 });
