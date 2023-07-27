@@ -30,7 +30,6 @@ let shortenUrl = () => {
     .then((item) => {
       let apiObject = item;
       urlText.textContent = displayValue;
-      //urlText.style.padding = '500px'
       apiObject = item.result.short_link;
       apiLink.textContent = apiObject
       copyButton.textContent = 'Copy'
@@ -60,6 +59,7 @@ inputButton.addEventListener("click", () => {
     urlText.classList.add("javascript-first-text");
     apiLink.classList.add("javascript-second-text");
     copyButton.classList.add("javascript-copy-button");
+    inputButton.style.marginBottom = "5px";
     urlShort.style.display = "block";
   } else {
     urlShort.style.display = "none";
