@@ -49,7 +49,7 @@ inputButton.addEventListener("click", () => {
   console.log(urlInput)
   if (
     urlInput.match(
-      /^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]*)?/
+      /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&=]*)/
     )
   ) {
     input.style.border = "";
@@ -60,13 +60,14 @@ inputButton.addEventListener("click", () => {
     urlText.classList.add("javascript-first-text");
     apiLink.classList.add("javascript-second-text");
     copyButton.classList.add("javascript-copy-button");
+    urlShort.style.display = "block";
   } else {
-    inputButton.style.marginBottom = '25px'
+    urlShort.style.display = "none";
+    inputButton.style.marginBottom = "25px";
     input.style.border = "3px solid #EA7F80";
     invalidMessage.style.color = "#EA7F80";
     invalidMessage.textContent = "Please add a link";
     console.log("NOPE!");
     urlText.textContent = "";
-  }
-  input.value = "";
+  }  
 });
